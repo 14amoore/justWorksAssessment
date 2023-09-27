@@ -28,10 +28,10 @@ const cryptoDistribution = async (amount) => {
 (async () => {
   // below is where you can adjust the amount you'd like to invest
   const amountToInvest = 100000;
-  const split = await cryptoDistribution(amountToInvest);
-  if (split) {
+  const cryptoSplit = await cryptoDistribution(amountToInvest);
+  if (cryptoSplit) {
     console.log(
-      `You should buy ${split.Bitcoin} of BTC, and ${split.Ethereum} of ETH to maintain a 70/30 split of the $${amountToInvest} you have to invest.`
+      `You should buy ${cryptoSplit.Bitcoin} of BTC, and ${cryptoSplit.Ethereum} of ETH to maintain a 70/30 split of the $${amountToInvest} you have to invest.`
     );
   } else {
     console.log('Failed to fetch crypto rates.');
