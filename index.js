@@ -26,7 +26,8 @@ const cryptoDistribution = async (amount) => {
 };
 
 (async () => {
-  const amountToInvest = 10000000;
+  // below is where you can adjust the amount you'd like to invest
+  const amountToInvest = 100000;
   const split = await cryptoDistribution(amountToInvest);
   if (split) {
     console.log(
